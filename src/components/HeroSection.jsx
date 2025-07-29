@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import './HeroSection.css';
+import '../cssComponents/HeroSection.css';
+
 import tusharImage from '../assets/tushar.JPG';
 
 function HeroSection() {
