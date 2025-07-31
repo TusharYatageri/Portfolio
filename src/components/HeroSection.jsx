@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../cssComponents/HeroSection.css';
-
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
 import tushar from '../assets/tushar.JPG';
 
 function HeroSection() {
@@ -41,6 +41,20 @@ function HeroSection() {
       <img src={tushar} alt="Tushar" className="profile-pic" />
         <h1>Hi, I'm Tushar</h1>
         <p>Full Stack Developer | Dream Chaser 🚀</p>
+      <div className="hero-icons">
+                <a href="https://github.com/TusharYatageri" target="_blank" rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
+                <a href="https://www.linkedin.com/in/tusharyatageri" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin />
+                </a>
+                <a href="mailto:tusharyatageri@example.com">
+                  <FaEnvelope />
+                </a>
+                <a href="https://www.instagram.com/__yatageri__" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram />
+                </a>
+              </div>
       </div>
     </div>
   );

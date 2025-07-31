@@ -93,3 +93,24 @@
     color: #aaa;
   }
   
+    
+  .hero-icons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-icons a {
+    margin: 0 10px;
+    color: #aeaaaa;
+    font-size: 1.3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .hero-icons a:hover {
+    color: #ffffff;
+    transform: translateY(-4px);
+  }
+  
