@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../cssComponents/HeroSection.css';
 
-import tusharImage from '../assets/tushar.JPG';
+import tushar from '../assets/tushar.JPG';
 
 function HeroSection() {
     useEffect(() => {
@@ -38,7 +38,7 @@ function HeroSection() {
         ))}
       </div>
       <div id='home' className="content">
-      <img style={{height: '200px', width: '200px', borderRadius: '100%', marginTop: '200px '}} src={tusharImage} alt="Tushar" className="profile-pic" />
+      <img src={tushar} alt="Tushar" className="profile-pic" />
         <h1>Hi, I'm Tushar</h1>
         <p>Full Stack Developer | Dream Chaser 🚀</p>
       </div>

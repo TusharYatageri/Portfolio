@@ -11,10 +11,20 @@
     flex-direction: column;
   }
   
+  .profile-pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin-top: 200px;
+    object-fit: fill;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+  }
+  
   
   .moon {
     position: fixed;
-    top: 80px;
+    top: 100px;
     right: 100px;
     width: 100px;
     height: 100px;

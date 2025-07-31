@@ -4,8 +4,8 @@ import '../cssComponents/AboutSection.css';
 
 const AboutSection = () => {
   return (
-    <section className="about-container">
-      <div id="about" className="about-content">
+    <section id="about" className="about-container">
+      <div className="about-content">
         <h2>About Me</h2>
         <p>
           I'm Tushar — a passionate Full Stack Developer who builds beautiful, performant web apps.
