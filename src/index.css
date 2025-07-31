@@ -73,15 +73,36 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Global Responsive Tweaks */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+    text-align: center;
   }
-  a:hover {
-    color: #747bff;
+
+  body {
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: stretch;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .container, .section, .project-card {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
   }
 }
+
