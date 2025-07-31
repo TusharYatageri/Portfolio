@@ -33,7 +33,7 @@ function Contact() {
       <form onSubmit={onSubmit} className="contact-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
-        <input type="text" name="phone" id="phone" placeholder="Your Contact Number"/>
+        <input type="tel" name="phone" id="phone" placeholder="Your Contact Number" pattern="[0-9]{10}"/>
         <input type="text" name="name"  placeholder="Your subject" required />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
