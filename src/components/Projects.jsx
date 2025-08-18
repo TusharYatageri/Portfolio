@@ -1,24 +1,21 @@
 import React from 'react'
-import '../cssComponents/Project.css';
-import tusharImg from '../assets/tushar.JPG';
+import '../cssComponents/Projects.css';
+import project1Img from '../assets/project1.jpg';
+import project2Img from '../assets/project2.jpg';
 
 function Projects() {
   const Projects = [
     {
-      image: tusharImg,
-      title: 'Portfolio Website',
-      description: 'A personal developer portfolio built using React.js.'
+      image: project1Img,
+      title: 'Hire A Maid',
+      description: 'Developed a full-stack web application where customers can easily hire maids for various household needs and service providers can register themselves to find work. The platform includes secure authentication, multiple service categories (House Cleaning, Home Cook, Old Age Care, Pet Grooming & Care), location-based search for nearby maids, and persistent profile management with image upload functionality, ensuring a seamless experience for both customers and service providers.'
     },
     {
-      image: tusharImg,
-      title: 'Weather App',
-      description: 'An app that shows real-time weather info using OpenWeather API.'
+      image: project2Img,
+      title: 'Smart Banking Application',
+      description: 'Developed a full-stack banking web application that enables users to securely manage their accounts and perform essential banking operations online. The application provides features such as secure user authentication, account creation and management, fund transfers between accounts, real-time balance updates, and detailed transaction history. With a responsive and intuitive dashboard, it ensures a smooth and reliable digital banking experience.'
     },
-    {
-      image: tusharImg,
-      title: 'To-Do List',
-      description: 'A simple and responsive to-do list app with CRUD functionality.'
-    }
+
   ];
   return (
     <section id='projects' className="project-section">
@@ -28,7 +25,7 @@ function Projects() {
         <div key={index} className="project-card">
           <img className="project-image"  src={project.image} alt={project.title} />
           <h3>{project.title}</h3>
-          <p>{project.description}</p>
+          <p className='project-description'>{project.description}</p>
         </div>
       ))}
     </div>
