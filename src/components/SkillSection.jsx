@@ -2,11 +2,14 @@ import React from 'react';
 import '../cssComponents/SkillSection.css';
 
 const skills = [
-  { name: 'Core Java', percent: 80 },
+  { name: 'Java', percent: 80 },
   { name: 'HTML & CSS', percent: 95 },
   { name: 'JavaScript', percent: 80 },
+  { name: 'TypeScript', percent: 80 },
   { name: 'React.js', percent: 85 },
-  { name: 'MySQL', percent: 95 },
+  { name: 'JDBC(Java Database Connectivity)', percent: 75 },
+  { name: 'MySQL', percent: 90 },
+  { name: 'Microsoft Power BI', percent: 80 },
   { name: 'Git & GitHub', percent: 80 },
 ];
 
