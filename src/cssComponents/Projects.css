@@ -40,6 +40,7 @@
 
   .project-description{
     text-align: justify;
+    margin: 10px 15px;
   }
   
   .project-card:hover {
