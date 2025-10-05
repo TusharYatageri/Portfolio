@@ -9,7 +9,7 @@ function Projects() {
         {
       image: WizkidsGurukul,
       title: 'WizKids Gurukul – EdTech Learning Platform',
-      description: 'Worked as a UI/UX React Developer on WizKids Gurukul, an EdTech platform focused on interactive and accessible learning. Contributed to building responsive, scalable front-end features, enhancing user experience, and delivering seamless interfaces that empower students and educators.'
+      description: 'Working as a UI/UX React Developer at WizKids Gurukul, an EdTech platform focused on interactive and accessible learning. Contributed to building responsive, scalable front-end features, enhancing user experience, and delivering seamless interfaces that empower students and educators.'
     },
     {
       image: HireAMaid,
