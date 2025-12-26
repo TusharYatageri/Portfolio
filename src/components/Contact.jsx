@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../cssComponents/Contact.css'; 
 import Alert from '@mui/material/Alert';
-import Collapse from '@mui/material/Collapse'; // 1. Import Collapse for a smooth animation
+import Collapse from '@mui/material/Collapse';
 
 function Contact() {
   const [alertInfo, setAlertInfo] = useState({
@@ -14,7 +14,10 @@ function Contact() {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "3a80b759-f533-487d-b28e-49f431175f20");
+    // Get your Web3Forms key from environment variable
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
+
+    formData.append("access_key", accessKey);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
@@ -29,7 +32,6 @@ function Contact() {
       }).then((res) => res.json());
 
       if (res.success) {
-        // 3. On success, update state to show a success message
         setAlertInfo({
           open: true,
           message: 'Message sent successfully!',
@@ -37,7 +39,6 @@ function Contact() {
         });
         event.target.reset();
       } else {
-        // On failure, update state to show an error message
         setAlertInfo({
           open: true,
           message: 'Failed to send message. Please try again.',
@@ -69,9 +70,12 @@ function Contact() {
           <Alert
             severity={alertInfo.severity}
             variant="outlined"
-            sx={{ mb: 2, bgcolor: 'transparent', color: 'white', '& .MuiOutlinedInput-notchedOutline': {
-                borderColor: 'white'
-             }}} 
+            sx={{ 
+              mb: 2, 
+              bgcolor: 'transparent', 
+              color: 'white', 
+              '& .MuiOutlinedInput-notchedOutline': { borderColor: 'white' } 
+            }} 
           >
             {alertInfo.message}
           </Alert>
